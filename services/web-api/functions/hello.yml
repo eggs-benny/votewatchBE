@@ -1,0 +1,7 @@
+hello:
+  handler: src/handlers/helloHandler.hello
+  events:
+      - http: # Get List of Hellos
+        method: get
+        path: "/hello/{helloId}"
+        # cors: true
